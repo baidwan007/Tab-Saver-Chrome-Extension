@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html>
+<head>
+    <script src="static/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="static/bootstrap.css">
+    <script src="static/bootstrap.js"></script>
+    <script src="static/popper.js"></script>
+    <title>Tab Saver B007</title>
+    <style type="text/css">
+        body {
+            white-space: nowrap;
+            min-width: 400px;
+            min-height: 150px;
+            background: teal;
+        }
+        #container1 {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        #input_c {
+            margin-top: 22px;
+            display:flex;
+            justify-content: space-between;
+        }
+        #select_c{
+            width: 100%;
+            padding-left:20px;
+            padding-right:20px;
+            margin-top: 14px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        #dropdown{
+            height:35px;
+            margin-right: 10px;
+        }
+        h4{
+            width: 100%;
+            text-align: center;
+            background: beige;
+            padding: 12px;
+            color: teal;
+        }
+    </style>
+</head>
+
+<body>
+<div id="container1">
+    <h4>Tab Saver b007</h4>
+    <div id="input_c">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Title..." id="title">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="button" id="enterTitle">Put in Sack</button>
+            </span>
+        </div>
+    </div>
+    <div id="select_c">
+        <select id="dropdown" class="form-control" style="background: #5cb85c;color: #fff; border-color: #5cb85c;">
+
+        </select>
+        <select id="dropdown_del" class="form-control" style="background: #c9302c;color:#fff;border-color: #d9534f;">
+
+        </select>
+    </div>
+</div>
+<script src="tabsaver.js"></script>
+</body>
+</html>
